@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const connectToDB = async (): Promise<void> => {
+const connect = async (): Promise<void> => {
   const connection: { connected?: number } = {};
   try {
     if (connection.connected === 1) return;
@@ -10,4 +10,4 @@ const connectToDB = async (): Promise<void> => {
     console.log(error);
   }
 };
-export default connectToDB;
+export default connect;
